@@ -1,6 +1,6 @@
 {
   "name": "wvue-ui",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "This is a UI components for Vue2.x",
   "main": "packages/index.js",
   "private": false,
@@ -18,7 +18,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/sun111sunshine/WVUE-UI/tree/master/WVUE-UI"
+    "url": "https://github.com/sun111sunshine/WVUE-UI"
   },
   "keywords": [
     "wvue",
