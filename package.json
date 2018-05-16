@@ -1,0 +1,29 @@
+{
+  "name": "wvue-ui",
+  "version": "1.0.1",
+  "description": "This is a UI components for Vue2.x",
+  "main": "packages/index.js",
+  "private": false,
+  "directories": {
+    "example": "examples",
+    "test": "test"
+  },
+  "dependencies": {
+    "less": "^2.7.3",
+    "less-loader": "^4.1.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/sun111sunshine/WVUE-UI/tree/master/WVUE-UI"
+  },
+  "keywords": [
+    "wvue",
+    "ui"
+  ],
+  "author": "origin-wan",
+  "license": "ISC"
+}

@@ -1,0 +1,79 @@
+{
+  "开发指南": [
+    {
+      "name": "giud",
+      "path": "/show/giud",
+      "desc": "介绍"
+    },
+    {
+      "name": "install",
+      "path": "/show/install",
+      "desc": "安装"
+    },
+    {
+      "name": "start",
+      "path": "/show/start",
+      "desc": "快速开始"
+    },
+    {
+      "name": "index",
+      "path": "/",
+      "type": "pages"
+    },
+    {
+      "name": "show",
+      "path": "/show",
+      "type": "pages"
+    },
+    {
+      "name": "logs",
+      "path": "/show/logs",
+      "desc": "更新日志"
+    }
+  ],
+  "组件": [
+    {
+      "desc": "cssComponent",
+      "path": "/show/component",
+      "items": [
+        {
+          "desc": "Button 按钮",
+          "name": "button",
+          "path": "/show/button"
+        },
+        {
+          "desc": "Icon 图标",
+          "name": "icon",
+          "path": "/show/icon"
+        },
+        {
+          "desc": "layout布局",
+          "name": "layout",
+          "path": "/show/layout"
+        }
+      ]
+    },
+    {
+      "desc": "jsComponent",
+      "path": "/show/component",
+      "items": [
+        {
+          "desc": "alert弹窗",
+          "name": "alert",
+          "path": "/show/alert"
+        }
+      ]
+    },
+    {
+      "desc": "formComponent",
+      "path": "/show/component",
+      "items": [
+        {
+          "desc": "Switch",
+          "name": "switch",
+          "path": "/show/switch"
+        }
+      ]
+    }
+  ]
+}
