@@ -13,15 +13,20 @@
            :type="type"
       >
         <header>
-          <h2>{{this.type}}</h2>
+          <!--<h2>{{this.type}}</h2>-->
+          <slot name="alertHeader"><h2 v-if="type">{{this.type}}</h2></slot>
           <i class="w-icon-close fs-24" @click="close"></i>
         </header>
         <content>
           <slot></slot>
         </content>
         <footer v-show="type === 'confirm'" >
-          <w-button type="info" @click="close">确定</w-button>
-          <w-button type="primary" @click="close">取消</w-button>
+          <slot name="alertFooter" @click="close">
+            <div v-show="type=='confirm'">
+              <w-button type="info" @click="close" size="small">确定</w-button>
+              <w-button type="primary" @click="close" size="small">取消</w-button>
+            </div>
+          </slot>
         </footer>
       </div>
     </div>

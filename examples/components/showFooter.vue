@@ -2,7 +2,7 @@
   <div class="footerAuthor">
     <div class="authorInfoArea">
       <div class="authorImg">
-        <img src="../assets/img/authorImg.jpg">
+        <img src="../../static/img/authorImg.jpg">
       </div>
       <div class="authorAndEmail">
         <p><label>author:</label><span>{{author}}</span></p>

@@ -9,7 +9,7 @@
   }
 </script>
 <style lang="less">
-  @import "../../style/icon.css";
+  @import "../../style/icon.less";
   .demo-icon .source > i {
     color: #8492a6;
     margin: 0 20px;

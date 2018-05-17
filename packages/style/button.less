@@ -11,12 +11,13 @@
   margin: 0;
   padding: 12px 20px;
   font-size: 14px;
-  border: @border-width-base @border-style-base @border-color-base;
+  //border: @border-width-base @border-style-base @border-color-base;
+  border:none;
   color:@color-default;
   border-radius:@border-radius-small;
   &--default{
     background-color: @color-default;
-    border-color:@color-primary;
+    border:1px solid @color-close;
     color:@color-primary;
     cursor: pointer;
     &:hover{
@@ -55,6 +56,26 @@
 .is-general{
   background-color: white;
   color: black;
+  &.w_button--success{
+    background-color: @color-success-hover;
+    color:@color-default;
+  }
+  &.w_button--danger{
+    background-color: @color-danger-hover;
+    color:@color-default;
+  }
+  &.w_button--info{
+    background-color: @color-info-hover;
+    color:@color-default;
+  }
+  &.w_button--warning{
+    background-color: @color-warning-hover;
+    color:@color-default;
+  }
+  &.w_button--primary{
+    background-color: @color-default-hover;
+    color:@color-default;
+  }
 }
 //是否倒圆角
 .is-round{

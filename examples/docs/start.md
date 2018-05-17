@@ -32,7 +32,7 @@
 
 ```js
 import WVUE from 'wvue-ui' // 引入组件库
-import '../node_modules/VVUI/packages/theme-default/lib/index.css' // 引入样式库
+import '../node_modules/wvue-ui/packages/style/lib/index.css' // 引入样式库
 
 Vue.use(WVUE)
 ```
@@ -64,4 +64,4 @@ export default {
 
 ## 自定义主题
 
-`VV-UI` 各个组件的样式变量都存放在 `vv-ui/packages/theme-defualt/common/var.css` 文件中。用户可根据实际需要，自定义组件的样式
+`VV-UI` 各个组件的样式变量都存放在 `wvue-ui/packages/style/common/var.css` 文件中。用户可根据实际需要，自定义组件的样式,这里面包括所有组建的样式文件以及公共样式的设置。
