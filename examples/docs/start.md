@@ -32,8 +32,6 @@
 
 ```js
 import WVUE from 'wvue-ui' // 引入组件库
-import '../node_modules/wvue-ui/packages/style/lib/index.css' // 引入样式库
-
 Vue.use(WVUE)
 ```
 
@@ -42,11 +40,11 @@ Vue.use(WVUE)
 可以局部注册所需的组件，适用于与其他框架组合使用的场景
 
 ```js
-import { WButton } from 'wvue-ui'
+import { w-button } from 'wvue-ui'
 
 export default {
   components: {
-    WButton
+    w-button
   }
 }
 ```
@@ -59,7 +57,6 @@ export default {
     <w-button>这是一个按钮</w-button>
   </div>
 </template>
-
 ```
 
 ## 自定义主题

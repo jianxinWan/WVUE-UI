@@ -35,7 +35,7 @@
 <script>
   /* eslint-disable quotes,indent,key-spacing */
 export default {
-  name: "WAlert",
+  name: "w-alert",
   props: {
     type:{
       type:String,
@@ -49,14 +49,24 @@ export default {
   data () {
     return {
       msg:"弹窗",
-      showAlert:false
+      showAlert:false,
+      time:3000
     }
   },
-  computed:{
+  mounted:function () {
+    this.close();
   },
   methods: {
     close () {
-      this.showAlert = false
+      if(this.type === 'info'){
+        console.log("type==info");
+        let that = this;
+        window.setTimeout(function () {
+          that.showAlert = false;
+          return
+        },this.time);
+      }
+      this.showAlert = false;
     },
     show (){
       this.showAlert = true

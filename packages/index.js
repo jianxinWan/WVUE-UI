@@ -3,17 +3,21 @@
  * @author origin
  * Date: 18/05/06
  */
+//调用组建
 import MetaInfo from './meta-info/index'
-
 import WButton from './button/index.js'
 import WAlert from './alert/index'
 import WLoadingBar from './loading-bar/index'
 import Wlayout from './layout/index'
+import WInput from './input/index'
+//全局调用icon样式
+import './style/icon.css'
 
 const components = [
   WButton,
   WAlert,
-  Wlayout
+  Wlayout,
+  WInput
 ]
 
 const install = function (Vue) {
@@ -32,5 +36,6 @@ export default {
   WButton,
   WAlert,
   WLoadingBar,
-  Wlayout
+  Wlayout,
+  WInput
 }

@@ -69,6 +69,11 @@
       "path": "/show/component",
       "items": [
         {
+          "desc": "input",
+          "name": "input",
+          "path": "/show/input"
+        },
+        {
           "desc": "Switch",
           "name": "switch",
           "path": "/show/switch"

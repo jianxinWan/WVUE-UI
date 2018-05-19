@@ -5,8 +5,8 @@
 
 <div class="demo-block">
   <div class="m-10">
-    <WButton>默认按钮</WButton>
-    <WButton>主要按钮</WButton>
+    <w-button>默认按钮</w-button>
+    <w-button>主要按钮</w-button>
     <w-button type="success">成功按钮</w-button>
     <w-button type="info">信息按钮</w-button>
     <w-button type="warning">警告按钮</w-button>
@@ -21,7 +21,7 @@
     <w-button type="danger" general>危险按钮</w-button>
   </div>
   <div class="m-10">
-    <WButton round>圆形按钮</WButton>
+    <w-button round>圆形按钮</w-button>
     <w-button type="primary" round>主要按钮</w-button>
     <w-button type="success" round>成功按钮</w-button>
     <w-button type="info" round>信息按钮</w-button>

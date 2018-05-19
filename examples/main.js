@@ -5,7 +5,7 @@ import App from './App'
 import router from './router'
 import demoBlock from './components/demo-block.vue'
 import WVUE from '../packages/index'
-import '../packages/theme-default/lib/index.css'
+
 Vue.component('demo-block', demoBlock)
 Vue.use(WVUE)
 Vue.config.productionTip = false

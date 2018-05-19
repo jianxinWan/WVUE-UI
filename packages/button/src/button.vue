@@ -17,7 +17,7 @@
   /* eslint-disable key-spacing */
 
   export default{
-    name: 'WButton',
+    name: 'w-button',
     props: {
       type: {
         type: String,

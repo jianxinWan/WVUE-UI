@@ -1,0 +1,34 @@
+@import './common/baseStyle';
+.w-input-box{
+  width:@text-input-box-width;
+  height:@text-input-box-height;
+  white-space: nowrap;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+  & label{
+    width:@text-input-label-width;
+    padding-right: 1rem;
+    text-align: center;
+    font-size: 1.1rem;
+    white-space: pre-wrap;
+    line-height:1.3rem;
+  }
+  & .text-input{
+    width: @text-input-width;
+    height:@text-input-height;
+    outline: none;
+    font-size: 1.1rem;
+    background-color: #fff;
+    padding-left:0.5rem;
+    color: @text-input-default-color;
+    &:focus{
+      border:1px solid @color-info;
+      outline: 1px solid @color-info;
+    }
+  }
+  & .w-input-valid{
+    padding-left: 0.5rem;
+  }
+}

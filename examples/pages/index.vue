@@ -59,7 +59,7 @@
     name: 'Hello',
     data () {
       return {
-        msg: '一款基于vue2.0的手机端UI组件',
+        msg: '一款基于vue2.x的UI组件库',
         csdnLink:'https://blog.csdn.net/shine_sunny1',
         githubLink:'https://github.com/sun111sunshine'
       }
