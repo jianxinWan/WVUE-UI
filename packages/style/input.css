@@ -1,4 +1,6 @@
 /*
+*/
+/*
 *   colors
 */
 /*
@@ -25,7 +27,7 @@ text-input base style
   white-space: nowrap;
   display: flex;
   flex-direction: row;
-  justify-content: flex-end;
+  justify-content: flex-start;
   align-items: center;
 }
 .w-input-box label {
@@ -36,8 +38,18 @@ text-input base style
   white-space: pre-wrap;
   line-height: 1.3rem;
 }
+.w-input-box label span {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+}
+.w-input-box label span i {
+  color: inherit;
+  font-size: 1.8rem;
+}
 .w-input-box .text-input {
-  width: 20rem;
+  width: 19rem;
   height: 2rem;
   outline: none;
   font-size: 1.1rem;
@@ -48,7 +60,9 @@ text-input base style
 .w-input-box .text-input:focus {
   border: 1px solid #50bfff;
   outline: 1px solid #50bfff;
+  color: #50bfff;
 }
 .w-input-box .w-input-valid {
   padding-left: 0.5rem;
+  color: #ff4949;
 }
