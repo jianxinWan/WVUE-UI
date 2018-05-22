@@ -44,3 +44,31 @@
     color: @color-danger;
   }
 }
+@media screen and (max-width: 500px) {
+  .w-input-box{
+    border: 1px solid @color-base;
+    width:@phone-inputBox-width;
+    height:@phone-inputBox-height;
+    margin: 0.4rem 0;
+    & label{
+      font-size: 0.8rem;
+      width: @phone-inputLabel-width;
+      & i{
+        font-size: 1rem;
+      }
+    }
+    & .text-input{
+      outline: none;
+      width: @phone-inputText-width;
+      border: none;
+      font-size:0.8rem;
+      &:focus{
+        border: none;
+        outline: none;
+      }
+    }
+    &:focus{
+      border: 1px solid @color-info;
+    }
+  }
+}

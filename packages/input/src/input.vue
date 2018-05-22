@@ -10,7 +10,7 @@
         class="text-input"
         type="text"
         :value="value"
-        :maxlength="maxLength"
+        :maxlength="maxLen"
         @input="$emit('input',$event.target.value)"
         @keyup="regInspect"
         @focus="changeColor"
@@ -37,7 +37,7 @@
         type:String,
         default:""
       },
-      maxLength:{
+      maxLen:{
         type:String,
         default:""
       }

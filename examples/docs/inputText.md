@@ -32,8 +32,7 @@
   <w-input label="Email" check="email" v-model="email">
     <i class="w-icon-feedback" slot="labelIcon"></i>
   </w-input>
-  <w-input label="Number" check="number" v-model="num" maxLength="9"></w-input>
-  <w-input label="这个label内容很多:" v-model="elseInput"></w-input>
+  <w-input label="这个label内容很多" v-model="elseInput"></w-input>
 </div>
 
 :::demo
@@ -42,7 +41,6 @@
 <w-input label="Address" check="text" v-model="address"></w-input>
 <w-input label="Phone" check="phone" v-model="phone"></w-input>
 <w-input label="Email" check="number" v-model="email"></w-input>
-<w-input label="Number" check="number" v-model="num"></w-input>
 <w-input label="这个label内容很多,并且只能输如入数字:" v-model="elseInput"></w-input>
 <script>
   export default{
@@ -103,7 +101,7 @@
 ```
 :::
 
-#### 限制长度```maxLength```
+#### 限制长度```maxLen```
 设置```maxLenth="number"```,```number```为限定大小.
 <div class="demo-block">
   <w-input label="Number" check="number" v-model="num" maxLength="9"></w-input>
@@ -111,9 +109,20 @@
 
 :::demo
 ```html
-<w-input label="Number" check="number" v-model="num" maxLength="9"></w-input>
+<w-input label="Number" check="number" v-model="num" ></w-input>
 ```
 :::
+
+#### 自定义
+
+#### 支持手机端和电脑端适配
+在电脑端和手机端分别显示不同的样式，可以根据开发者工具查看手机端样式。
+<div class="demo-block">
+  <div>
+    <img src="../../static/img/pcInput.png" width="320px">
+    <img src="../../static/img/phoneInput.png" width="300px">
+  </div>
+</div>
 
 ### Attributes
 

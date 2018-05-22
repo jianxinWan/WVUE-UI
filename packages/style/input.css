@@ -21,6 +21,7 @@
 /*
 text-input base style
 */
+/*input-style-phone*/
 .w-input-box {
   width: 30rem;
   height: 4rem;
@@ -65,4 +66,32 @@ text-input base style
 .w-input-box .w-input-valid {
   padding-left: 0.5rem;
   color: #ff4949;
+}
+@media screen and (max-width: 500px) {
+  .w-input-box {
+    border: 1px solid #2c3e50;
+    width: 18rem;
+    height: 2.2rem;
+    margin: 0.4rem 0;
+  }
+  .w-input-box label {
+    font-size: 0.8rem;
+    width: 3.5rem;
+  }
+  .w-input-box label i {
+    font-size: 1rem;
+  }
+  .w-input-box .text-input {
+    outline: none;
+    width: 10rem;
+    border: none;
+    font-size: 0.8rem;
+  }
+  .w-input-box .text-input:focus {
+    border: none;
+    outline: none;
+  }
+  .w-input-box:focus {
+    border: 1px solid #50bfff;
+  }
 }

@@ -69,9 +69,14 @@
       "path": "/show/component",
       "items": [
         {
-          "desc": "input",
-          "name": "input",
-          "path": "/show/input"
+          "desc": "input输入框",
+          "name": "inputText",
+          "path": "/show/inputText"
+        },
+        {
+          "desc": "checkBox复选框",
+          "name": "checkBox",
+          "path": "/show/checkBox"
         },
         {
           "desc": "Switch",
