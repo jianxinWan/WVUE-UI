@@ -1,5 +1,5 @@
 <template>
-  <div class="w-input-box">
+  <div class="w-input-box" :style="inputBoxStyle">
       <label class="input-box-name">
         <span>
           <slot name="labelIcon"></slot>
@@ -40,12 +40,25 @@
       maxLen:{
         type:String,
         default:""
+      },
+      width:{
+        type:String,
+        default:"30rem"
+      },
+      height:{
+        type:String,
+        default:"4rem"
       }
     },
     data(){
       return{
         msg:'input',
-        inValid:false
+        inValid:false,
+        //根据传入的高度设定宽度和高度
+        inputBoxStyle:{
+          width:this.width,
+          height:this.height
+        }
       }
     },
     methods:{

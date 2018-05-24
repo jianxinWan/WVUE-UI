@@ -1,7 +1,5 @@
 @import './common/baseStyle';
 .w-input-box{
-  width:@text-input-box-width;
-  height:@text-input-box-height;
   white-space: nowrap;
   display: flex;
   flex-direction: row;
@@ -11,7 +9,7 @@
     width:@text-input-label-width;
     padding-right: 1rem;
     text-align: center;
-    font-size: 1.1rem;
+    font-size: @text-input-fontSize;
     white-space: pre-wrap;
     line-height:1.3rem;
     & span {
@@ -21,7 +19,7 @@
       align-items: center;
       & i{
         color: inherit;
-        font-size: 1.8rem;
+        font-size: @text-input-fontSize+0.7;
       }
     }
   }
@@ -29,7 +27,7 @@
     width: @text-input-width;
     height:@text-input-height;
     outline: none;
-    font-size: 1.1rem;
+    font-size: @text-input-fontSize;
     background-color: #fff;
     padding-left:0.5rem;
     color: @text-input-default-color;
@@ -47,8 +45,8 @@
 @media screen and (max-width: 500px) {
   .w-input-box{
     border: 1px solid @color-base;
-    width:@phone-inputBox-width;
-    height:@phone-inputBox-height;
+    width:@phone-inputBox-width !important;
+    height:@phone-inputBox-height !important;
     margin: 0.4rem 0;
     & label{
       font-size: 0.8rem;

@@ -104,16 +104,34 @@
 #### 限制长度```maxLen```
 设置```maxLenth="number"```,```number```为限定大小.
 <div class="demo-block">
-  <w-input label="Number" check="number" v-model="num" maxLength="9"></w-input>
+  <w-input label="Number" check="number" v-model="num" maxLength="9" width="20rem" height="3rem"></w-input>
 </div>
 
 :::demo
 ```html
-<w-input label="Number" check="number" v-model="num" ></w-input>
+<w-input label="Number" check="number" v-model="num" maxLength="9" width="20rem" height="3rem"></w-input>
 ```
 :::
 
-#### 自定义
+#### 自定义宽高
+设置```width```和```height```的值来自定义```input```的大小，pc端默认值```width="30rem",height="4rem"```,移动端默认大小```
+width="18rem",height="2.2rem"```.
+
+<div class="demo-block">
+  <w-input label="Name" check="text" v-model="name">
+    <i class="w-icon-my" slot="labelIcon"></i>
+  </w-input>
+  <w-input label="Number" check="number" v-model="num" maxLength="9" width="25rem" height="3.5rem"></w-input>
+</div>
+
+:::demo
+```html
+  <w-input label="Name" check="text" v-model="name">
+    <i class="w-icon-my" slot="labelIcon"></i>
+  </w-input>
+  <w-input label="Number" check="number" v-model="num" maxLength="9" width="25rem" height="3.5rem"></w-input>
+```
+:::
 
 #### 支持手机端和电脑端适配
 在电脑端和手机端分别显示不同的样式，可以根据开发者工具查看手机端样式。
@@ -127,8 +145,10 @@
 ### Attributes
 
 | 参数      | 说明   | 类型      | 可选值       | 默认值   |
-|---------- |-------- |----------|-------------  |-------- |
-| label     |   标注  | String   |—              |  —   |
-| check     | 正则检查| String     |number,phone,email|text(不做处理)|
-| v-model   | input绑定的值| String | —           | —      |
-|maxlength  |限制input的长度
+|---------- |-------- |----------|------------- |--------  |
+| label     |   标注  | String   |—            |—      |
+| check     | 正则检查| String   |number,phone,email|text(不做处理)|
+| v-model   | input绑定的值| String | —        | —      |
+|maxlength  |限制input的长度|String |自定义|—|
+|width      |输入框的宽度|String|自定义 |30rem|
+|height     |输入框的高度|String|自定义 |4rem|
