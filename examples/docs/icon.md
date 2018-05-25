@@ -1,6 +1,5 @@
 <script>
   var iconList = require('../icon.json');
-
   export default {
     data() {
       return {

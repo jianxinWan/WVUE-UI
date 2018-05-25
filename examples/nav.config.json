@@ -74,9 +74,9 @@
           "path": "/show/inputText"
         },
         {
-          "desc": "checkBox复选框",
-          "name": "checkBox",
-          "path": "/show/checkBox"
+          "desc": "w-single-input(单选框)",
+          "name": "single-input",
+          "path": "/show/single"
         },
         {
           "desc": "Switch",
