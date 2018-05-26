@@ -1,40 +1,11 @@
-//.singleBox{
-//  width: 30rem;
-//  height:auto;
-//  padding: 0.5rem 1rem;
-//  & .showSelect{
-//    width: 26rem;
-//    padding: 0 1rem;
-//    height: 2rem;
-//    border: 1px solid;
-//    border-radius: 0.35rem;
-//    display: flex;
-//    flex-direction: row;
-//    justify-content: space-between;
-//    align-items: center;
-//    &:hover{
-//      cursor: pointer;
-//    }
-//  }
-//  & .optionsList{
-//    margin: 0;
-//    padding: 0;
-//    width: 28rem;
-//    height:10rem;
-//    border: 1px solid;
-//    & li{
-//      list-style: none;
-//      border: 1px solid;
-//    }
-//  }
-//}
+@import "./common/baseStyle.less";
 input{
   border: 1px solid #ccc;
   outline:0;
   transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s;
 }
 input:focus,select:focus,textarea:focus {
-  border-color: rgba(82, 168, 236, .8);
+  border-color: @color-info;
   box-shadow: 0 0 8px rgba(82, 168, 236, .6);
 }
 .clearfix:after {content: "."; height: 0px; display: block; clear: both; visibility: hidden;}
@@ -76,7 +47,7 @@ input:focus,select:focus,textarea:focus {
 }
 .functional-select-wrapper .display-container .drop{
   position: absolute;
-  top: 4px;
+  top:0;
   right: 6px;
   float: right;
   font-style: normal;
@@ -116,6 +87,8 @@ input:focus,select:focus,textarea:focus {
 }
 
 .functional-select-wrapper .options-container .options-ul-list{
+  margin: 0;
+  padding: 0;
   max-height: 160px;
   list-style-type: none;
   overflow-x: visible;
@@ -132,7 +105,7 @@ input:focus,select:focus,textarea:focus {
 }
 
 .functional-select-wrapper .options-container .options-ul-list li:hover{
-  background-color: #5897fb;
+  background-color: @color-info;
   color: #FFF;
   transition: all 0.3s ease;
 }
@@ -147,23 +120,6 @@ input:focus,select:focus,textarea:focus {
   padding: 6px 6px 0px 12px;
   /*cursor: text;*/
 }
-
-/*多选框 获取焦点时的input*/
-/*.functional-select-wrapper .multiple-select-input{
-	min-width: 15px;
-	border: none;
-	background-color: orange;
-	display: inline-block;
-	float: left;
-	margin-top: 2px;
-}
-
-.functional-select-wrapper .multiple-select-input:focus{
-	border-color: none;
-	box-shadow: none;
-}*/
-
-/*单个选中的item*/
 .functional-select-wrapper .multiple-selected-item{
   width: auto;
   height: 20px;
@@ -183,7 +139,7 @@ input:focus,select:focus,textarea:focus {
   font-style: normal;
   position: absolute;
   right: 3px;
-  top: 0px;
+  top: 0;
   cursor: pointer;
   color: #aaa;
 }

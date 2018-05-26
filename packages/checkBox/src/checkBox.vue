@@ -53,6 +53,9 @@
         }
       }
     },
+    mounted:function(){
+      window.addEventListener('click',this.blur);
+    },
     methods:{
       checkboxFocus:function(){
         if(!this.show){

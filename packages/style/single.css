@@ -1,3 +1,27 @@
+/*
+*/
+/*
+*   colors
+*/
+/*
+* color hover
+*/
+/*
+*Border
+*/
+/*
+*Box-shadow
+*/
+/*
+*button size
+*/
+/*
+]*  alert size
+ */
+/*
+text-input base style
+*/
+/*input-style-phone*/
 input {
   border: 1px solid #ccc;
   outline: 0;
@@ -6,7 +30,7 @@ input {
 input:focus,
 select:focus,
 textarea:focus {
-  border-color: rgba(82, 168, 236, 0.8);
+  border-color: #50bfff;
   box-shadow: 0 0 8px rgba(82, 168, 236, 0.6);
 }
 .clearfix:after {
@@ -52,7 +76,7 @@ textarea:focus {
 }
 .functional-select-wrapper .display-container .drop {
   position: absolute;
-  top: 4px;
+  top: 0;
   right: 6px;
   float: right;
   font-style: normal;
@@ -88,6 +112,8 @@ textarea:focus {
   border-radius: 4px;
 }
 .functional-select-wrapper .options-container .options-ul-list {
+  margin: 0;
+  padding: 0;
   max-height: 160px;
   list-style-type: none;
   overflow-x: visible;
@@ -102,7 +128,7 @@ textarea:focus {
   padding: 6px;
 }
 .functional-select-wrapper .options-container .options-ul-list li:hover {
-  background-color: #5897fb;
+  background-color: #50bfff;
   color: #FFF;
   transition: all 0.3s ease;
 }
@@ -113,8 +139,8 @@ textarea:focus {
 .functional-select-wrapper .multiple-select-container {
   overflow: hidden;
   padding: 6px 6px 0px 12px;
+  /*cursor: text;*/
 }
-/*单个选中的item*/
 .functional-select-wrapper .multiple-selected-item {
   width: auto;
   height: 20px;
@@ -133,7 +159,7 @@ textarea:focus {
   font-style: normal;
   position: absolute;
   right: 3px;
-  top: 0px;
+  top: 0;
   cursor: pointer;
   color: #aaa;
 }
