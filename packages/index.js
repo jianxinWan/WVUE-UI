@@ -10,7 +10,8 @@ import WAlert from './alert/index'
 import WLoadingBar from './loading-bar/index'
 import Wlayout from './layout/index'
 import WInput from './input/index'
-import WcheckBox from './checkBox/index'
+import Wsingle from './single/index'
+import Wcheckbox from './checkbox'
 //全局调用icon样式
 import './style/icon.css'
 
@@ -19,7 +20,8 @@ const components = [
   WAlert,
   Wlayout,
   WInput,
-  WcheckBox
+  Wsingle,
+  Wcheckbox
 ];
 
 const install = function (Vue) {
@@ -39,5 +41,6 @@ export default {
   WAlert,
   WLoadingBar,
   Wlayout,
-  WcheckBox
+  Wsingle,
+  Wcheckbox
 }

@@ -29,7 +29,7 @@
     }
   }
 </script>
-# check box 单选框
+# single-input 单选框
 ---
 ### 基础用法
 单选框```w-single-input```设定主要包含两个数组```originOptions```、```selected```这两个数组，```originOptions```代表单选框中可供选择的值，```selected```代表
@@ -77,9 +77,10 @@ export default{
 </div>
 ```
 :::
-
-### 改变大小
-```w-single-input```设定样式大小很简单，我们只需要在调用此组件的同时在外部包含一个div即可。（注：为了展示，此个单选框与上一个数据相同）。
+#### 函数说明
+```queryData```、```singleCallback```第一个是查询添加数据给单选框，设置当前选中的默认项，不设置，则显示请选择，一般在此可以添加ajax请求到之后的数据，```singleCallback```指的是，选中当前选项之后所要执行的操作，**注意:这个函数在html代码中要与```@selected```进行绑定**
+## 改变大小
+```w-single-input```设定样式大小很简单，我们只需要在调用此组件的同时在外部包含一个div即可。（注：为了展示，此个单选框与上一个数据相同）
 <div class="demo-block">
   <div style="width:300px">
   <w-single-input v-bind:optionsdata="single.originOptions" v-bind:selecteddata="single.selected" @selected="singleCallback"></w-single-input>
