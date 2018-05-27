@@ -1,6 +1,6 @@
 /**
- * @author monkeywang
- * Date: 17/11/18
+ * @author origin
+ * Date: 18/05/27
  */
 import Vue from 'vue'
 import LoadingBar from './src/loading-bar.vue'

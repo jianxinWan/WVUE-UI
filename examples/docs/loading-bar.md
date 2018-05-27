@@ -86,10 +86,12 @@
 提供 LoadingBar 的全局配置，使用方法如下：
 
 <div class="demo-block">
-   <w-button @click="setSpeed">设置speed速度</w-button>
-   <w-button @click="setSpinner">设置spinner动画效果</w-button>
-   <w-button @click="setPercentNum">设置percentNum每次加载的比例</w-button>
-   <w-button @click="setShowSpinner">设置是否显示spinner</w-button>
+  <div>
+  <w-button @click="setSpeed">设置speed速度</w-button>
+     <w-button @click="setSpinner">设置spinner动画效果</w-button>
+     <w-button @click="setPercentNum">设置percentNum每次加载的比例</w-button>
+     <w-button @click="setShowSpinner">设置是否显示spinner</w-button>
+  </div>
 </div>
 
 ::: demo

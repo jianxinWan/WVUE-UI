@@ -35,3 +35,6 @@
     }
   }
 </script>
+<style>
+  @import '../../style/loading-bar.less';
+</style>
