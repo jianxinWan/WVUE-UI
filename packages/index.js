@@ -25,9 +25,9 @@ const components = [
 ];
 
 const install = function (Vue) {
-  if (install.installed) return
-  components.map(component => Vue.component(component.name, component))
-  MetaInfo.install(Vue)
+  if (install.installed) return;
+  components.map(component => Vue.component(component.name, component));
+  MetaInfo.install(Vue);
   Vue.prototype.$loading = WLoadingBar
 };
 
