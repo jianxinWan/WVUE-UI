@@ -1,0 +1,28 @@
+@import "./common/baseStyle.less";
+
+.upload-block{
+  width:100%;
+  height:3rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: flex-end;
+  & .uploadBtn{
+
+  }
+  & .uploadInfo{
+    width: 80%;
+    padding-left: 1rem;
+    border-bottom: 2px solid @color-info;
+    & .fileList{
+      & span{
+        border: 1px solid @color-primary;
+        padding: 0.2rem 0.2rem;
+        border-radius: @border-radius-base;
+        & i:hover{
+          cursor:pointer;
+        }
+      }
+    }
+  }
+}

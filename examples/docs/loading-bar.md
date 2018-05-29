@@ -49,9 +49,9 @@
 </script>
 <div class="demo-block">
 <div>
-  <w-button @click="start">开始</w-button>
-  <w-button @click="end">结束</w-button>
-  <w-button @click="error">错误</w-button>
+  <w-button type="info" @click="start">开始</w-button>
+  <w-button type="info" @click="end">结束</w-button>
+  <w-button type="info" @click="error">错误</w-button>
 </div>
 </div>
 
@@ -59,9 +59,9 @@
 
 ```html
 <div class="m-10">
-  <w-button @click="start">开始</w-button>
-  <w-button @click="end">结束</w-button>
-  <w-button @click="error">错误</w-button>
+  <w-button type="info" @click="start">开始</w-button>
+    <w-button type="info" @click="end">结束</w-button>
+    <w-button type="info" @click="error">错误</w-button>
 </div>
 <script>
   export default{
@@ -87,20 +87,20 @@
 
 <div class="demo-block">
   <div>
-  <w-button @click="setSpeed">设置speed速度</w-button>
-     <w-button @click="setSpinner">设置spinner动画效果</w-button>
-     <w-button @click="setPercentNum">设置percentNum每次加载的比例</w-button>
-     <w-button @click="setShowSpinner">设置是否显示spinner</w-button>
+  <w-button type="info" @click="setSpeed">设置speed速度</w-button>
+     <w-button type="info" @click="setSpinner">设置spinner动画效果</w-button>
+     <w-button type="info" @click="setPercentNum">设置percentNum每次加载的比例</w-button>
+     <w-button type="info" @click="setShowSpinner">设置是否显示spinner</w-button>
   </div>
 </div>
 
 ::: demo
 
 ```html
-<w-button @click="setSpeed">设置speed速度</w-button>
-<w-button @click="setSpinner">设置spinner动画效果</w-button>
-<w-button @click="setPercentNum">设置percentNum每次加载的比例</w-button>
-<w-button @click="setShowSpinner">设置是否显示spinner</w-button>
+<w-button type="info" @click="setSpeed">设置speed速度</w-button>
+<w-button type="info" @click="setSpinner">设置spinner动画效果</w-button>
+<w-button type="info" @click="setPercentNum">设置percentNum每次加载的比例</w-button>
+<w-button type="info" @click="setShowSpinner">设置是否显示spinner</w-button>
 <script>
   export default{
     methods: {

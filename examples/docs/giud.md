@@ -16,7 +16,7 @@
 
 ### 贡献
 
-如果你在使用 `WVUE-UI` 时遇到问题，或者有好的建议，欢迎给我们提 [Email](https://mail.qq.com/cgi-bin/frame_html?sid=L3RRiIPLxtQheD1n&r=0f6f1249291f8f4744d11e8549a6a548) 或 [Github](https://github.com/sun111sunshine/WVUE-UI/tree/master/WVUE-UI)
+如果你在使用 `WVUE-UI` 时遇到问题，或者有好的建议，欢迎给我们提 [Email](https://mail.qq.com/cgi-bin/frame_html?sid=L3RRiIPLxtQheD1n&r=0f6f1249291f8f4744d11e8549a6a548) 或 [Github](https://github.com/sun111sunshine//WVUE-UI)s
 
 ### 支持
 

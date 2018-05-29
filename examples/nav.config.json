@@ -89,6 +89,11 @@
           "path": "/show/checkbox"
         },
         {
+          "desc": "w-upload(上传文件)",
+          "name": "upload",
+          "path": "/show/upload"
+        },
+        {
           "desc": "Switch",
           "name": "switch",
           "path": "/show/switch"

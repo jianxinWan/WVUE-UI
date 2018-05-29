@@ -9,7 +9,8 @@
     </div>
     <div class="w__loading-bar--spinner" role="spinner" v-if="showSpinner">
       <div class="spinner-icon" :class="isError ? 'spinner-icon--error' : ''"
-           :style="{'animation': 'w-spinner 400ms '+easing+' infinite'}"></div>
+           :style="{'animation': 'w-spinner 400ms '+easing+' infinite'}">
+      </div>
     </div>
   </div>
 </template>
@@ -17,12 +18,6 @@
 <script>
   export default{
     name: 'WLoadingBar',
-    props: {
-      type: {
-        type: Number,
-        default: 1
-      }
-    },
     data () {
       return {
         speed: 5,

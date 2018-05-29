@@ -11,7 +11,8 @@ import WLoadingBar from './loading-bar/index'
 import Wlayout from './layout/index'
 import WInput from './input/index'
 import Wsingle from './single/index'
-import Wcheckbox from './checkbox'
+import Wcheckbox from './checkbox/index'
+import WUpload from './upload/index'
 //全局调用icon样式
 import './style/icon.css'
 
@@ -21,7 +22,8 @@ const components = [
   Wlayout,
   WInput,
   Wsingle,
-  Wcheckbox
+  Wcheckbox,
+  WUpload
 ];
 
 const install = function (Vue) {
@@ -42,5 +44,6 @@ export default {
   WLoadingBar,
   Wlayout,
   Wsingle,
-  Wcheckbox
+  Wcheckbox,
+  WUpload
 }
