@@ -107,6 +107,7 @@
     visibility: hidden;
   }
   .showRightCont{
+    padding-bottom:2.5rem;
     width: 100%;
     height:100%;
     min-height: inherit;

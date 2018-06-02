@@ -29,7 +29,6 @@
     width: 100%;
     height:100%;
     z-index:10;
-    padding: 20px 0;
     border-right:1px solid rgb(200,200,200);
     box-shadow:0 15px 10px rgb(190,190,190);
     text-align: left;
