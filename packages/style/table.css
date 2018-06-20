@@ -1,0 +1,46 @@
+/*
+*/
+/*
+*   colors
+*/
+/*
+* color hover
+*/
+/*
+*Border
+*/
+/*
+*Box-shadow
+*/
+/*
+*button size
+*/
+/*
+]*  alert size
+ */
+/*
+text-input base style
+*/
+/*input-style-phone*/
+.tab {
+  width: 100%;
+}
+.tab thead th {
+  border-bottom: 1px solid #50bfff;
+  padding-left: 0.5rem;
+}
+.tab tbody tr th {
+  padding: 0 0.5rem;
+}
+.table-bordered {
+  border-collapse: collapse;
+}
+.table-bordered th {
+  border: 1px solid #50bfff;
+}
+.table-centered th {
+  text-align: center;
+}
+.table-narrow tr {
+  height: 5px;
+}

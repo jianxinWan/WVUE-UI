@@ -2,8 +2,7 @@
   export default{
     data(){
       return {
-        file:{},
-        files:{}
+        fileNameList:[]
       }
     },
     methods: {

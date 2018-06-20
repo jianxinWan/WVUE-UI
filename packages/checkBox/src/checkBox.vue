@@ -162,6 +162,6 @@
     }
   }
 </script>
-<style lang="less">
-  @import "../../style/single.less";
+<style>
+  @import "../../style/single.css";
 </style>

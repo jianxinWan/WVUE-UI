@@ -1,6 +1,6 @@
 {
   "name": "wvue-ui",
-  "version": "1.0.4",
+  "version": "1.0.6",
   "description": "This is a UI components for Vue2.x",
   "main": "packages/index.js",
   "private": false,
@@ -87,6 +87,7 @@
     "sinon": "^4.0.0",
     "sinon-chai": "^2.8.0",
     "url-loader": "^0.5.8",
+    "vue-lazyload": "^1.2.6",
     "vue-loader": "^13.3.0",
     "vue-style-loader": "^3.0.1",
     "vue-template-compiler": "^2.5.2",

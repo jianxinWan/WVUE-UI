@@ -1,6 +1,6 @@
 /**
  * @author wanjianxin
- * Date: 18/05/12
+ * Date: 18/06/12
  */
 import Button from './src/layout.vue'
 Button.install = function (Vue) {

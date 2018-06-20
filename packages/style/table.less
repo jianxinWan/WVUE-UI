@@ -1,0 +1,43 @@
+@import "./common/baseStyle.less";
+
+.tab{
+  width:100%;
+  thead th{
+    border-bottom: 1px solid @color-info;
+    padding-left: 0.5rem;
+  }
+  tbody{
+    & tr{
+      & th{
+        padding:0 0.5rem;
+      }
+    }
+  }
+}
+.table-bordered{
+  border-collapse: collapse;
+  & th{
+    border: 1px solid @color-info;
+  }
+}
+.table-centered{
+  & th{
+    text-align: center;
+  }
+}
+.table-narrow{
+  & tr{
+    height:5px;
+    & th{
+    }
+  }
+}
+.table-hightlight{
+  //&:nth-child(odd){
+  //  background-color:rgb(230,230,230);
+  //}
+  //&:nth-child(even){
+  //  background-color: blue;
+  //}
+}
+

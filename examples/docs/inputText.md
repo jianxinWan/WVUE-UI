@@ -7,10 +7,13 @@
         address:"西安邮电大学",
         email:"1158810459@qq.com",
         num:"只能输入9位数字",
+        pass:"123456wjx",
         elseInput:"我要把这个组件写好"
       }
     },
     methods: {
+    },
+    mounted:function(){
     }
   }
 </script>
@@ -32,7 +35,17 @@
   <w-input label="Email" check="email" v-model="email">
     <i class="w-icon-feedback" slot="labelIcon"></i>
   </w-input>
+  <w-input label="Password" type="password" v-model="pass">
+    <i class="w-icon-edit" slot="labelIcon"></i>
+  </w-input>
   <w-input label="这个label内容很多" v-model="elseInput"></w-input>
+  <hr/>
+  <p>name:{{name}}</p>
+  <p>phone:{{phone}}</p>
+  <p>address:{{address}}</p>
+  <p>email:{{email}}</p>
+  <p>elseInput:{{elseInput}}</p>
+
 </div>
 
 :::demo
@@ -42,6 +55,12 @@
 <w-input label="Phone" check="phone" v-model="phone"></w-input>
 <w-input label="Email" check="number" v-model="email"></w-input>
 <w-input label="这个label内容很多,并且只能输如入数字:" v-model="elseInput"></w-input>
+ <hr/>
+  <p>name:{{name}}</p>
+  <p>phone:{{phone}}</p>
+  <p>address:{{address}}</p>
+  <p>email:{{email}}</p>
+  <p>elseInput:{{elseInput}}</p>
 <script>
   export default{
     data () {

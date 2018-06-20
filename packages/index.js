@@ -12,7 +12,11 @@ import Wlayout from './layout/index'
 import WInput from './input/index'
 import Wsingle from './single/index'
 import Wcheckbox from './checkbox/index'
-import WUpload from './upload/index'
+import Wupload from './upload/index'
+import Wtable from './table/index'
+import Wloading from './loading/index'
+import Wswiper from './swiper/index'
+import WTabs from './tabs/index'
 //全局调用icon样式
 import './style/icon.css'
 
@@ -23,7 +27,11 @@ const components = [
   WInput,
   Wsingle,
   Wcheckbox,
-  WUpload
+  Wupload,
+  Wtable,
+  Wloading,
+  Wswiper,
+  WTabs
 ];
 
 const install = function (Vue) {
@@ -45,5 +53,9 @@ export default {
   Wlayout,
   Wsingle,
   Wcheckbox,
-  WUpload
+  Wupload,
+  Wtable,
+  Wloading,
+  Wswiper,
+  WTabs
 }

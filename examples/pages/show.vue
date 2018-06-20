@@ -86,7 +86,6 @@
   }
   .showContent{
     width: 100%;
-    height: auto;
     display: flex;
     flex-direction: row;
     text-align: left;
@@ -107,10 +106,9 @@
     visibility: hidden;
   }
   .showRightCont{
-    padding-bottom:2.5rem;
     width: 100%;
-    height:100%;
     min-height: inherit;
+    padding-bottom: 4rem;
   }
   .startMenu{
     width: 3rem;
@@ -150,7 +148,6 @@
     }
     .showRightCont{
       width:80%;
-      height:100%;
       border-right:1px solid rgb(200,200,200);
       box-shadow:0 15px 10px rgb(190,190,190);
       text-align: left;

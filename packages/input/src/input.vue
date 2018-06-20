@@ -8,7 +8,7 @@
       </label>
       <input
         class="text-input"
-        type="text"
+        :type="type"
         :value="value"
         :maxlength="maxLen"
         @input="$emit('input',$event.target.value)"
@@ -110,6 +110,6 @@
     }
   }
 </script>
-<style lang="less">
-  @import "../../style/input.less";
+<style>
+  @import "../../style/input.css";
 </style>

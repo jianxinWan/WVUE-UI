@@ -47,6 +47,11 @@
           "path": "/show/icon"
         },
         {
+          "desc": "table 表格",
+          "name": "table",
+          "path": "/show/table"
+        },
+        {
           "desc": "layout布局",
           "name": "layout",
           "path": "/show/layout"
@@ -63,9 +68,29 @@
           "path": "/show/alert"
         },
         {
+          "desc": "loading(局部)",
+          "name": "loading",
+          "path": "/show/loading"
+        },
+        {
           "desc": "loading-bar加载进度条",
           "name": "loading-bar",
           "path": "/show/loading-bar"
+        },
+        {
+          "desc":"Tabs(标签页)",
+          "name":"tabs",
+          "path":"/show/tabs"
+        },
+        {
+          "desc":"swiper(轮播图)",
+          "name":"swiper",
+          "path":"/show/swiper"
+        },
+        {
+          "desc":"lazy懒加载",
+          "name":"lazy",
+          "path":"/show/lazy"
         }
       ]
     },
