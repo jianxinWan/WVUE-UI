@@ -88,6 +88,11 @@
           "path":"/show/swiper"
         },
         {
+          "desc":"uploadPhoto(上传头像)",
+          "name":"uploadPhoto",
+          "path":"/show/uploadPhoto"
+        },
+        {
           "desc":"lazy懒加载",
           "name":"lazy",
           "path":"/show/lazy"
@@ -122,6 +127,29 @@
           "desc": "Switch",
           "name": "switch",
           "path": "/show/switch"
+        }
+      ]
+    }
+  ],
+  "指令":[
+    {
+      "desc": "directive",
+      "path": "/show/component",
+      "items": [
+        {
+          "desc": "wave 波纹",
+          "name": "wave",
+          "path": "/show/wave"
+        },
+        {
+          "desc": "badge徽标",
+          "name": "badge",
+          "path": "/show/badge"
+        },
+        {
+          "desc": "Tooltip(提示框)",
+          "name": "tooltip",
+          "path": "/show/tooltip"
         }
       ]
     }

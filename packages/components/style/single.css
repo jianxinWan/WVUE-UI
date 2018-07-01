@@ -22,6 +22,166 @@
 text-input base style
 */
 /*input-style-phone*/
+/*swiper-transition*/
+.move-enter-active {
+  transition: all 0.5s ease;
+  transform: translateX(0);
+}
+.move-leave-active {
+  transition: all 0.5s ease;
+  transform: translateX(-100%);
+}
+.move-enter {
+  transform: translateX(100%);
+}
+.move-leave {
+  transform: translateX(0);
+}
+.fade-enter-active,
+.fade-leave-active {
+  transition: opacity 0.5s;
+}
+.fade-enter,
+.fade-leave-active {
+  opacity: 0;
+}
+/*    wave    */
+.ripple {
+  position: absolute;
+  transform: scale(0);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.ripple.show {
+  animation: ripple 0.75s ease-out;
+}
+@keyframes ripple {
+  to {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+/***** badge徽标 ******/
+.badge {
+  position: relative;
+}
+.badge .badge-style-base {
+  position: absolute;
+  border-radius: 50%;
+  border: none;
+  text-align: center;
+}
+.badge .badge-style-medium {
+  width: 18px;
+  height: 18px;
+  right: -9px;
+  top: -9px;
+  line-height: 18px;
+  font-size: 0.8rem;
+}
+.badge .badge-style-small {
+  width: 10px;
+  height: 10px;
+  right: -5px;
+  top: -5px;
+  line-height: 10px;
+  font-size: 0.3rem;
+}
+.badge .badge-style-big {
+  width: 24px;
+  height: 24px;
+  right: -12px;
+  top: -12px;
+  line-height: 24px;
+  font-size: 1.1rem;
+}
+.badge .badge-style-big i {
+  font-size: 1.5rem;
+}
+/*Tooltip提示框*/
+.tooltip-base {
+  position: absolute;
+  padding: 0.3rem 0.5rem;
+  min-width: 120px;
+  min-height: 30px;
+  max-width: 300px;
+  max-height: 100px;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 4px;
+  white-space: normal;
+  animation: showTooltip 1s;
+  -moz-animation: showTooltip 1s;
+  -webkit-animation: showTooltip 1s;
+}
+@keyframes showTooltip {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.tooltip-top {
+  top: 0;
+  margin-top: -48px;
+}
+.tooltip-bottom {
+  bottom: 0;
+  margin-bottom: -48px;
+  left: 50%;
+  margin-left: -40px;
+}
+.tooltip-left {
+  left: 0;
+  margin-left: -145px;
+  top: 50%;
+  margin-top: -15px;
+}
+.tooltip-right {
+  right: 0;
+  margin-right: -145px;
+  top: 50%;
+  margin-top: -15px;
+}
+.tooltip-triangle {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-width: 0.5rem;
+  border-style: solid;
+}
+.triangle-top {
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-bottom: -0.5rem;
+  border-color: rgba(0, 0, 0, 0.4) white white white;
+  border-bottom: none;
+}
+.triangle-bottom {
+  top: 0;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  border-color: white white rgba(0, 0, 0, 0.4) white;
+  border-top: none;
+}
+.triangle-left {
+  right: 0;
+  margin-right: -0.5rem;
+  top: 50%;
+  margin-top: -10px;
+  border-color: white white white rgba(0, 0, 0, 0.4);
+  border-right: none;
+}
+.triangle-right {
+  top: 50%;
+  left: 0;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  border-color: white rgba(0, 0, 0, 0.4) white white;
+  border-left: none;
+}
 input {
   border: 1px solid #ccc;
   outline: 0;

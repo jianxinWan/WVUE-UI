@@ -1,0 +1,249 @@
+/*
+*/
+@color-base:#2c3e50;
+/*
+*   colors
+*/
+@color-primary: rgba(63,170,245,1);
+@color-success:rgba(19,206,102,1);
+@color-warning: rgba(247,186,42,1);
+@color-danger: rgba(255,73,73,1);
+@color-info: rgba(80,191,255,1);
+@color-close:rgba(128,128,128,1);
+@color-default: rgba(255,255,255,1);
+
+/*
+* color hover
+*/
+
+@color-primary-hover:rgba(63,170,245,0.6);
+@color-success-hover:rgba(19,206,102,0.6);
+@color-warning-hover:rgba(247,186,42,0.6);
+@color-danger-hover: rgba(255,73,73,0.6);
+@color-info-hover:rgba(80,191,255,0.6);
+@color-close-hover: rgba(128,128,128,0.6);
+@color-default-hover: rgba(94, 88, 98, 0.6);
+
+/*
+*Border
+*/
+
+@border-width-base: 1px;
+@border-style-base: solid;
+@border-color-base: #b4bccc;
+@border-color-hover:#50bfff ;
+@border-radius-base: 4px;
+@border-radius-small: 8px;
+@border-radius-circle:20px;
+
+/*
+*Box-shadow
+*/
+@box-shadow-base: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .04);
+@box-shadow-dark: 0 2px 4px rgba(0, 0, 0, .12), 0 0 6px rgba(0, 0, 0, .12);
+
+/*
+*button size
+*/
+
+@small:9px 16px;
+@medium:12px 20px;
+@big:15px 25px;
+
+@small-font:10px;
+@medium-font:14px;
+@big-font:17px;
+
+/*
+]*  alert size
+ */
+@alert-small-width:15rem;
+@alert-small-height:9rem;
+
+@alert-medium-width:20rem;
+@alert-medium-height:13rem;
+
+@alert-big-width:25rem;
+@alert-big-height:15rem;
+
+/*
+text-input base style
+*/
+@text-input-box-width:30rem;
+@text-input-box-height:4rem;
+
+@text-input-label-width:20%;
+@text-input-lable-height:50%;
+@text-input-width:65%;
+@text-input-height:50%;
+@text-input-padding-v:0.375rem;
+@text-input-padding-h:0.75rem;
+@text-input-default-color:rgb(128,128,128);
+@text-input-fontSize:@text-input-box-width/(@text-input-box-width*0.9);
+/*input-style-phone*/
+@phone-inputBox-width:@text-input-box-width*0.6;
+@phone-inputBox-height:@text-input-box-height*0.55;
+@phone-inputLabel-width:3.5rem;
+@phone-inputText-width:10rem;
+
+
+/*swiper-transition*/
+.move-enter-active {
+  transition: all 0.5s ease;
+  transform: translateX(0)
+}
+.move-leave-active {
+  transition: all 0.5s ease;
+  transform: translateX(-100%);
+}
+.move-enter {
+  transform: translateX(100%);
+}
+.move-leave {
+  transform: translateX(0);
+}
+.fade-enter-active, .fade-leave-active {
+  transition: opacity .5s
+}
+.fade-enter, .fade-leave-active {
+  opacity: 0
+}
+
+/*    wave    */
+.ripple{
+  position: absolute;
+  transform: scale(0);
+  border-radius: 50%;
+  pointer-events: none;
+}
+.ripple.show{
+  animation:ripple .75s ease-out;
+}
+@keyframes ripple {
+  to{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+/***** badge徽标 ******/
+
+.badge{
+  position: relative;
+  & .badge-style-base{
+    position: absolute;
+    border-radius: 50%;
+    border: none;
+    text-align: center;
+  }
+  & .badge-style-medium{
+    width: 18px;
+    height: 18px;
+    right:-9px;
+    top:-9px;
+    line-height: 18px;
+    font-size: 0.8rem;
+  }
+  & .badge-style-small{
+    width:10px;
+    height:10px;
+    right:-5px;
+    top:-5px;
+    line-height:10px;
+    font-size:0.3rem;
+  }
+  & .badge-style-big{
+    width:24px;
+    height:24px;
+    right:-12px;
+    top:-12px;
+    line-height:24px;
+    font-size:1.1rem;
+    & i{
+      font-size:1.5rem;
+    }
+  }
+}
+/*Tooltip提示框*/
+.tooltip-base{
+  position: absolute;
+  padding:0.3rem 0.5rem;
+  min-width: 120px;
+  min-height: 30px;
+  max-width: 300px;
+  max-height: 100px;
+  background-color: rgba(0,0,0,0.4);
+  border-radius: @border-radius-base;
+  white-space: normal;
+  animation:showTooltip 1s;
+  -moz-animation: showTooltip 1s;
+  -webkit-animation: showTooltip 1s;
+}
+@keyframes showTooltip {
+  from{
+    opacity: 0;
+  }to{
+    opacity: 1;
+  }
+}
+.tooltip-top{
+  top: 0;
+  margin-top:-48px;
+}
+.tooltip-bottom{
+  bottom: 0;
+  margin-bottom: -48px;
+  left:50%;
+  margin-left:-40px;
+}
+.tooltip-left{
+ left:0;
+ margin-left:-145px;
+ top:50%;
+ margin-top:-15px;
+}
+.tooltip-right{
+  right:0;
+  margin-right:-145px;
+  top:50%;
+  margin-top:-15px;
+}
+.tooltip-triangle{
+  position: absolute;
+  width: 0;
+  height:0;
+  border-width: 0.5rem;
+  border-style: solid;
+}
+.triangle-top{
+  bottom: 0;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-bottom: -0.5rem;
+  border-color: rgba(0,0,0,0.4) white white white;
+  border-bottom: none;
+}
+.triangle-bottom{
+  top: 0;
+  left: 50%;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  border-color: white white rgba(0,0,0,0.4) white ;
+  border-top:none;
+}
+.triangle-left{
+  right:0;
+  margin-right: -0.5rem;
+  top: 50%;
+  margin-top: -10px;
+  border-color: white  white white rgba(0,0,0,0.4);
+  border-right: none;
+}
+.triangle-right{
+  top:50%;
+  left:0;
+  margin-left: -0.5rem;
+  margin-top: -0.5rem;
+  border-color: white  rgba(0,0,0,0.4) white white;
+  border-left: none;
+}

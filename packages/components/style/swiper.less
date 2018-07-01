@@ -1,3 +1,4 @@
+@import "./common/baseStyle";
 .slide-pages {
   position: absolute;
   margin: 0;
@@ -78,24 +79,4 @@
       height: 100%;
     }
   }
-}
-.move-enter-active {
-  transition: all 0.5s ease;
-  transform: translateX(0)
-}
-.move-leave-active {
-  transition: all 0.5s ease;
-  transform: translateX(-100%);
-}
-.move-enter {
-  transform: translateX(100%);
-}
-.move-leave {
-  transform: translateX(0);
-}
-.fade-enter-active, .fade-leave-active {
-  transition: opacity .5s
-}
-.fade-enter, .fade-leave-active {
-  opacity: 0
 }

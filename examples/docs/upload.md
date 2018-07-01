@@ -2,7 +2,9 @@
   export default{
     data(){
       return {
-        fileNameList:[]
+        fileNameList:[],
+        file:{},
+        files:{}
       }
     },
     methods: {
