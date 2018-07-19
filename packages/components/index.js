@@ -17,6 +17,7 @@ import Wtable from './table/index'
 import Wloading from './loading/index'
 import Wswiper from './swiper/index'
 import WTabs from './tabs/index'
+import WuploadPhoto from './uploadPhoto/index'
 //dolary
 import Dcartoon from './dolary/index'
 
@@ -38,7 +39,8 @@ const components = [
   Wloading,
   Wswiper,
   WTabs,
-  Dcartoon
+  Dcartoon,
+  WuploadPhoto
 ];
 
 const install = function (Vue) {
@@ -69,5 +71,6 @@ export default {
   Wswiper,
   WTabs,
   Dcartoon,
+  WuploadPhoto,
   Directives
 }

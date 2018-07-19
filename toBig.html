@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+</head>
+<body>
+<img border="0" src="./static/img/authorImg.jpg" onmousewheel="return rollImg(this)">
+</body>
+<script language="javascript">
+  function rollImg(o){
+    /* 获取当前页面的缩放比
+        若未设置zoom缩放比，则为默认100%，即1，原图大小
+    */
+    let zoom=parseInt(o.style.zoom)||100;
+    /* event.wheelDelta 获取滚轮滚动值并将滚动值叠加给缩放比zoom
+        wheelDelta统一为±120，其中正数表示为向上滚动，负数表示向下滚动
+    */
+    zoom+=event.wheelDelta/12;
+    /* 如果缩放比大于0，则将缩放比加载到页面元素 */
+    if (zoom>0) o.style.zoom=zoom+'%';
+    /* 如果缩放比不大于0，则返回false，不执行操作 */
+    return false;
+  }
+</script>
+</html>

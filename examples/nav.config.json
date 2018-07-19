@@ -109,13 +109,13 @@
           "path": "/show/inputText"
         },
         {
-          "desc": "w-single-input(单选框)",
-          "name": "single-input",
+          "desc": "w-single(单选框)",
+          "name": "single",
           "path": "/show/single"
         },
         {
-          "desc": "w-checkbox-input(多选框)",
-          "name": "checkbox-input",
+          "desc": "w-checkbox(多选框)",
+          "name": "checkbox",
           "path": "/show/checkbox"
         },
         {

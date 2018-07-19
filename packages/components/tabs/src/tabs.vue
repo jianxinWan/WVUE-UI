@@ -2,7 +2,7 @@
   <div class="tab">
     <div class="tab-hd">
       <ul>
-        <li v-for="item in tabList" @click="change(item.tabName)" :class="activeShow(item)" v-wave>
+        <li v-for="item in tabList" @click="change(item.tabName)" :class="activeShow(item)">
           <div class="nav">
             {{item.title}}
           </div>
@@ -38,6 +38,10 @@
       tabCut:{
         type:String,
         default:''
+      },
+      isWave:{
+        type:Boolean,
+        default:true
       }
     },
     methods:{
