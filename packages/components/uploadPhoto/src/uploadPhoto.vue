@@ -11,9 +11,11 @@
     </div>
     <div class="showClipArea" v-show="selectImg">
       <div class="centerArea">
-        <canvas id="c1"></canvas>
-        <div class="mark" id="mark" @mousedown="mouseDown"></div>
-        <canvas id="c3"></canvas>
+        <div class="control-warp">
+          <canvas id="c1"></canvas>
+          <div class="mark" id="mark" @mousedown="mouseDown"></div>
+          <canvas id="c3"></canvas>
+        </div>
       </div>
     </div>
   </div>
@@ -46,36 +48,30 @@ export default {
     }.bind(this),false);
   },
   methods:{
-    getObjectUrl:function(file){
-      let url = null;
-      if (window.createObjectURL!=undefined) { // basic
-        url = window.createObjectURL(file) ;
-      } else if (window.URL!=undefined) { // mozilla(firefox)
-        url = window.URL.createObjectURL(file) ;
-      } else if (window.webkitURL!=undefined) { // webkit or chrome
-        url = window.webkitURL.createObjectURL(file);
-      }
-      return url ;
-    },
     showImg:function() {
-      this.imgUrl = this.getObjectUrl(this.$refs.uploadImg.files[0]);
-      if (this.imgUrl) {
-        document.getElementsByClassName('imgFile')[0].setAttribute('src', this.imgUrl);
-        this.selectImg = true;
-        this.$nextTick(function(){
-          let imgHeight = document.getElementsByClassName("imgFile")[0].height;
-          let imgWidth = document.getElementsByClassName("imgFile")[0].width;
-          console.log(imgHeight,imgWidth);
-          this.changeWidth(imgHeight);
-          this.showClip();
-        }.bind(this));
+      if (!this.$refs.uploadImg.files[0]) {
+        return;
       }
+      let reader = new FileReader();
+      reader.readAsDataURL(this.$refs.uploadImg.files[0]);
+      reader.onload =function(evt) {
+        setTimeout(function(){
+          document.getElementsByClassName('imgFile')[0].src = evt.target.result;
+          setTimeout(function(){
+            let imgHeight = document.getElementsByClassName('imgFile')[0].offsetHeight;
+            console.log(imgHeight);
+            this.selectImg = true;
+            this.imgUrl = evt.target.result;
+            this.changeWidth(imgHeight);
+            this.showClip();
+          }.bind(this))
+        }.bind(this),0);
+      }.bind(this);
     },
     changeWidth:function(height){
       if(height<=200){
         this.imgStyle.height = 300;
         this.imgStyle.width = 300*(200/height);
-        console.log(this.imgStyle.height,this.imgStyle.width);
       }else{
         this.imgStyle.width = 300;
         this.imgStyle.height = height*1.5;
@@ -87,8 +83,8 @@ export default {
       console.log(this.imgStyle.height,this.imgStyle.width);
       canvas1.height = this.imgStyle.height;
       canvas1.width = this.imgStyle.width;
-      canvas3.height=200;
-      canvas3.width=200;
+      canvas3.height=250;
+      canvas3.width=250;
     },
     mouseDown:function(event){
       let ev = event || window.event;
