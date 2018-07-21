@@ -2,7 +2,7 @@
   <div class="MenuList animated">
     <div v-for="title in (Object.keys(menuData))">
       <p class="navTit">{{title}}</p>
-      <div v-for="nav in menuData[title]" v-if="nav.desc" class="navChild">
+      <div v-for="nav in menuData[title]" v-show="nav.desc" class="navChild">
         <router-link  tag="div" v-if="nav.name" :to="{name: nav.name}" class="aLink">{{nav.desc}}</router-link>
         <p v-else class="componentClass">{{nav.desc}}</p>
         <div v-for="item in nav.items" class="everyComponents">
@@ -24,12 +24,11 @@
     }
   }
 </script>
-<style scoped>
+<style >
   .MenuList{
     width: 100%;
     height:100%;
-    margin-bottom: 2.5rem;
-    z-index:10;
+    z-index:99;
     border-right:1px solid rgb(200,200,200);
     box-shadow:0 15px 10px rgb(190,190,190);
     text-align: left;
@@ -66,7 +65,6 @@
   @media screen and (min-width: 500px){
     .MenuList{
       visibility: visible;
-      padding: 0;
     }
   }
 </style>

@@ -12,13 +12,11 @@
       </div>
     </div>
     <div class="logo">
-      <router-link to="/uiList" tag="div">
         <a href="/uiList">
           <div class="logoImg">
             <img src="../assets/img/logo2.png" width="100%" height="auto">
           </div>
         </a>
-      </router-link>
     </div>
     <div class="uiInfo">
       <h3 :text="msg" class="uiInfoTit">{{msg}}</h3>
@@ -33,9 +31,9 @@
               </span>
             </div>
           </router-link>
-          <router-link to="/uiList" tag="div">
+          <a href="http://139.199.104.60/ttms/index.html#/index">
             <div class="showBtn">查看演示</div>
-          </router-link>
+          </a>
         </div>
       </div>
       <div class="linkConent">
