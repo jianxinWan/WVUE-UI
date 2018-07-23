@@ -82,6 +82,6 @@
   }
 </script>
 
-<style lang="less" scoped>
-  @import "../../style/swiper.less";
+<style>
+  @import "../../style/swiper.css";
 </style>

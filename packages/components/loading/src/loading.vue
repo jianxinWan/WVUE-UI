@@ -116,5 +116,5 @@
   }
 </script>
 <style lang="less">
-  @import '../../style/loading.less';
+  @import '../../style/loading.css';
 </style>

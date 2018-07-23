@@ -13,6 +13,6 @@ export default {
   }
 }
 </script>
-<style lang="less">
-  @import '../../style/lazy.less';
+<style>
+  @import '../../style/lazy.css';
 </style>

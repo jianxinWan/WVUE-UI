@@ -1,6 +1,6 @@
 {
   "name": "wvue-ui",
-  "version": "1.0.6",
+  "version": "1.1.0",
   "description": "This is a UI components for Vue2.x",
   "main": "packages/index.js",
   "private": false,

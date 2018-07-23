@@ -62,6 +62,6 @@
   }
 </script>
 
-<style lang="less">
-  @import "../../style/tabs.less";
+<style>
+  @import "../../style/tabs.css";
 </style>

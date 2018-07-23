@@ -249,7 +249,4 @@ text-input base style
     border: none;
     outline: none;
   }
-  .w-input-box:focus {
-    border: 1px solid #50bfff;
-  }
 }

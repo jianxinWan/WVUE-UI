@@ -205,6 +205,6 @@ export default {
 }
 </script>
 
-<style lang="less">
-  @import "../../style/uploadPhoto.less";
+<style>
+  @import "../../style/uploadPhoto.css";
 </style>

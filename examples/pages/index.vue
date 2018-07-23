@@ -107,12 +107,12 @@
     padding: 1.5rem 0.5rem;
   }
   .logo{
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start ;
+    align-items: center;
     width:100%;
     height:16rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
     overflow: hidden;
   }
   .logoImg{
@@ -125,11 +125,12 @@
   }
   .uiInfo{
     width: 100%;
-    height:3rem;
+    height: 5rem;
     display: flex;
     justify-content: center;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
+    overflow: hidden;
   }
   .uiInfoTit{
     color: gray;
@@ -197,8 +198,18 @@
       display: none;
     }
     .uiInfo{
-      height:5rem;
+      height:10rem;
       font-size: 2rem;
+    }
+    .uiInfo::before{
+      content: "";
+      width: 110%;
+      height:5px;
+      margin-bottom: 50px;
+      box-shadow: 0 -5px 10px #ccc;
+      background-color: white;
+      transform-origin: 100% 0;
+      transform:rotate(-3deg);
     }
     .uiInfo .uiInfoTit{
       color:rgb(163,234,110);

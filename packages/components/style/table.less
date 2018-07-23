@@ -1,13 +1,16 @@
 @import "./common/baseStyle.less";
-
-.tab{
+.table-style{
   width:100%;
-  thead th{
-    border-bottom: 1px solid @color-info;
-    padding-left: 0.5rem;
+  & thead{
+    width: 100%;
+    & th{
+      border-bottom: 1px solid @color-info;
+      padding-left: 0.5rem;
+    }
   }
-  tbody{
+  & tbody{
     & tr{
+      width: 100%;
       & th{
         padding:0 0.5rem;
       }
@@ -32,12 +35,12 @@
     }
   }
 }
-.table-hightlight{
-  //&:nth-child(odd){
-  //  background-color:rgb(230,230,230);
-  //}
-  //&:nth-child(even){
-  //  background-color: blue;
-  //}
+.table-lineHeight{
+  & tr:nth-child(odd){
+    background-color:#fff;
+  }
+  & tr:nth-child(even){
+    background-color:#f5f7fa;
+  }
 }
 

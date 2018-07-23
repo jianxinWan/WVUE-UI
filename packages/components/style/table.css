@@ -182,14 +182,20 @@ text-input base style
   border-color: white rgba(0, 0, 0, 0.4) white white;
   border-left: none;
 }
-.tab {
+.table-style {
   width: 100%;
 }
-.tab thead th {
+.table-style thead {
+  width: 100%;
+}
+.table-style thead th {
   border-bottom: 1px solid #50bfff;
   padding-left: 0.5rem;
 }
-.tab tbody tr th {
+.table-style tbody tr {
+  width: 100%;
+}
+.table-style tbody tr th {
   padding: 0 0.5rem;
 }
 .table-bordered {
@@ -203,4 +209,10 @@ text-input base style
 }
 .table-narrow tr {
   height: 5px;
+}
+.table-lineHeight tr:nth-child(odd) {
+  background-color: #fff;
+}
+.table-lineHeight tr:nth-child(even) {
+  background-color: #f5f7fa;
 }

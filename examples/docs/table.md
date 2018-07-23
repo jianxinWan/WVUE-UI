@@ -104,9 +104,9 @@ export default{
 ```
 :::
 
-### 设置高亮(heighlight)
+### 设置高亮(lineHeight)
 <div class="demo-block">
-  <w-table :table-info="tableInfo" bordered hightlight></w-table>
+  <w-table :table-info="tableInfo" bordered lineHeight></w-table>
 </div>
 
 :::demo

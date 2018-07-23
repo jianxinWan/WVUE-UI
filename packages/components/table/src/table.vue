@@ -1,5 +1,5 @@
 <template>
-  <table class="tab" cellspacing="0" cellpadding="0" :class="setStyle">
+  <table class="table-style" cellspacing="0" cellpadding="0" :class="setStyle">
     <thead>
       <tr v-for=" item in tableInfoList.theadInfo">
         <th v-for="list in item">{{list}}</th>
@@ -26,7 +26,7 @@
           'table-bordered':this.bordered,
           'table-centered':this.centered,
           'table-narrow':this.narrowed,
-          'table-hightlight':this.hightlight
+          'table-lineHeight':this.lineHeight
         }
       }
     },
@@ -35,7 +35,7 @@
       centered:Boolean,
       bordered:Boolean,
       striped:Boolean,
-      hightlight:Boolean,
+      lineHeight:Boolean,
       narrowed:Boolean
     },
     mounted:function(){
@@ -45,6 +45,6 @@
     }
   }
 </script>
-<style lang="less">
-  @import '../../style/table.less';
+<style>
+  @import '../../style/table.css';
 </style>
