@@ -86,7 +86,7 @@
     height:auto;
     display: flex;
     flex-direction: column;
-    justify-content: flex-start;
+    justify-content:space-between;
   }
   .showHeader{
     width: 100%;
@@ -104,7 +104,7 @@
     flex-direction: row;
     text-align: left;
     justify-content: flex-start;
-    min-height: 45rem;
+    min-height: 59rem;
   }
   .showFooter{
     width:100%;
@@ -118,6 +118,7 @@
     height: inherit;
     background-color: white;
     visibility: hidden;
+    z-index:99;
   }
   .showRightCont{
     width: 100%;
@@ -191,10 +192,14 @@
       cursor: pointer;
       transform: scale(1.1);
     }
+    .showContent{
+      min-height: 78rem;
+    }
     .leftNav{
       position: relative;
       width: 16rem;
       visibility: visible;
+      height:inherit;
     }
     .showRightCont{
       border-right:1px solid rgb(200,200,200);

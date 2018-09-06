@@ -1,6 +1,6 @@
 <template>
   <div class="MenuList animated">
-    <div v-for="title in (Object.keys(menuData))">
+    <div v-for="title in (Object.keys(menuData))" >
       <p class="navTit">{{title}}</p>
       <div v-for="nav in menuData[title]" v-show="nav.desc" class="navChild">
         <router-link  tag="div" v-if="nav.name" :to="{name: nav.name}" class="aLink">{{nav.desc}}</router-link>
@@ -42,8 +42,9 @@
     padding-left:2rem;
    }
   .navChild{
-    padding-left:2.5rem;
+    padding-left:2rem;
     margin-top: 1rem;
+    padding-right:0.8rem;
   }
   .componentClass{
     width: 100%;
