@@ -24,7 +24,7 @@
       </div>
     </div>
     <div class="showContent">
-      <div class="leftNav animated" @click="hiddenMenu">
+      <div class="leftNav" style="height:inherit" @click="hiddenMenu">
         <MenuList>
         </MenuList>
       </div>
@@ -53,22 +53,31 @@
   },
   methods:{
     showMenu:function(event) {
-      if(!($(".leftNav").hasClass("slideInLeft"))){
-        $(".leftNav").css("visibility","visible");
-        $(".leftNav").addClass("slideInLeft");
-        $(".leftNav").removeClass("slideOutLeft")
+      const navWarp = document.getElementsByClassName('leftNav')[0];
+      const rightContentHight = document.getElementsByClassName('showRightCont')[0].offsetHeight;
+      if(rightContentHight > 1248){
+        navWarp.style.height = rightContentHight + 'px';
+      }
+      if(!this.hasClass(navWarp,"slideInLeft")){
+        navWarp.style.visibility = "visible";
+        navWarp.classList.add("slideInLeft");
+        navWarp.classList.remove("slideOutLeft");
       }else{
-        $(".leftNav").addClass("slideOutLeft");
-        $(".leftNav").removeClass("slideInLeft");
+        navWarp.classList.add("slideOutLeft");
+        navWarp.classList.remove("slideInLeft");
       }
     },
     hiddenMenu:function(e){
       this.closeMenu();
     },
+    hasClass:function(dom,className){
+      return (' ' + dom.className + ' ').indexOf(' ' + className + ' ') > -1;
+    },
     closeMenu:function(){
-      if(($(".leftNav").hasClass("slideInLeft"))){
-        $(".leftNav").addClass("slideOutLeft");
-        $(".leftNav").removeClass("slideInLeft");
+      const navWarp = document.getElementsByClassName('leftNav')[0];
+      if(this.hasClass(navWarp,"slideInLeft")){
+        navWarp.classList.add("slideOutLeft");
+        navWarp.classList.remove("slideInLeft");
       }
     }
   },
@@ -217,5 +226,69 @@
     .github-link::before , .github-link::after{
       margin: 0.2rem;
     }
+  }
+  .slideInLeft {
+    -webkit-animation: slideInLeft 0.6s ease both;
+    animation: slideInLeft 0.6s ease both;
+  }
+  @-webkit-keyframes slideInLeft {
+      from {opacity: 0;-webkit-transform: translateX(-100%);}
+      to{opacity: 1;}
+  }
+  @keyframes slideInLeft {
+      from{opacity: 0;-webkit-transform: translateX(-100%); transform: translateX(-100%);}
+      to { opacity: 1;}
+  }
+  .slideOutLeft {
+      -webkit-animation: slideOutLeft 0.6s ease both;
+      animation: slideOutLeft 0.6s ease both;
+  }
+  @-webkit-keyframes slideOutLeft {
+      from {opacity: 1;}
+      to{opacity: 0;-webkit-transform:-100%}
+  }
+  @keyframes slideOutLeft {
+      from{opacity: 1;}
+      to { opacity: 0;-webkit-transform: (-100%); transform: translateX(-100%);}
+  }
+  @-webkit-keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  @keyframes fadeIn {
+      from {
+          opacity: 0;
+      }
+      to {
+          opacity: 1;
+      }
+  }
+  .fadeIn {
+      -webkit-animation-name: fadeIn 1s;
+      animation-name: fadeIn 1s;
+  }
+  @-webkit-keyframes fadeOut {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+  }
+  @keyframes fadeOut {
+      from {
+          opacity: 1;
+      }
+      to {
+          opacity: 0;
+      }
+  }
+  .fadeOut {
+      -webkit-animation-name: fadeOut 1s;
+      animation-name: fadeOut 1s;
   }
 </style>
