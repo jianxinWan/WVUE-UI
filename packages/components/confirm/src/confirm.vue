@@ -13,7 +13,6 @@
            :type="type"
       >
         <header>
-          <!--<h2>{{this.type}}</h2>-->
           <slot name="alertHeader"><h2 v-if="type">{{this.type}}</h2></slot>
           <i class="w-icon-close fs-24" @click="close"></i>
         </header>
@@ -33,47 +32,44 @@
   </transition>
 </template>
 <script>
-  /* eslint-disable quotes,indent,key-spacing */
 export default {
-  name: "w-alert",
+  name: 'w-alert',
   props: {
-    type:{
-      type:String,
-      default:"info"
+    type: {
+      type: String,
+      default: 'info'
     },
-    size:{
-      type:String,
-      default:'medium'
+    size: {
+      type: String,
+      default: 'medium'
     }
   },
   data () {
     return {
-      msg:"弹窗",
-      showAlert:false,
-      time:3000
+      msg: '弹窗',
+      showAlert: false,
+      time: 3000
     }
   },
-  mounted:function () {
-    this.close();
+  mounted: function () {
+    this.close()
   },
   methods: {
     close () {
-      if(this.type === 'info'){
-        console.log("type==info");
-        let that = this;
+      if (this.type === 'info') {
+        let that = this
         window.setTimeout(function () {
-          that.showAlert = false;
-          return
-        },this.time);
+          that.showAlert = false
+        }, this.time)
       }
-      this.showAlert = false;
+      this.showAlert = false
     },
-    show (){
+    show () {
       this.showAlert = true
     }
   }
 }
 </script>
-<style>
-  @import "../../style/alert.css";
+<style lang="less">
+  @import "./confirm.less";
 </style>

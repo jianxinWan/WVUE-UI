@@ -16,7 +16,7 @@
         <span class="placeholder-info" v-show="this.fileNameList.length==0 &&!this.disable&&!this.multiple">请选择一个文件</span>
         <span class="placeholder-info" v-show="this.fileNameList.length==0 &&!this.disable&&this.multiple">请选择一个或多个文件</span>
         <span class="placeholder-info-disable" v-show="this.disable">不能上传文件</span>
-        <span class="file-name-block" v-for="(item,index) in fileNameList">{{item.name}}
+        <span class="file-name-block" v-for="(item,index) in fileNameList" :key="index">{{item.name}}
           <i class="w-icon-close2" @click="removeFile(index)"></i>
         </span>
       </p>
@@ -26,47 +26,47 @@
 <script>
   export default {
     name: 'w-upload',
-    data(){
+    data () {
       return {
-        msg:'File1',
-        fileNameList:[],
-        active:false
+        msg: 'File1',
+        fileNameList: [],
+        active: false
       }
     },
-    computed:{
-      //显示不同的文件列表底部样式
-      showDisableStyle:function () {
-         return{
-           'upload-disable':this.disable,
-           'uploadInfo':!this.disable
-         }
+    computed: {
+      // 显示不同的文件列表底部样式
+      showDisableStyle: function () {
+        return {
+          'upload-disable': this.disable,
+          'uploadInfo': !this.disable
+        }
       }
     },
-    props:{
-      disable:Boolean,
-      multiple:Boolean,
-      value:[Object,FileList,'']
+    props: {
+      disable: Boolean,
+      multiple: Boolean,
+      value: [Object, FileList, '']
     },
-    mounted(){
-      const vm = this;
-        this.$refs.file.onchange = function(){
-          vm.$emit('change',this.files);
-          if(this.files.length){
-            if(vm.multiple){
-              for(let i=0;i<this.files.length;i++){
-                vm.fileNameList.push(this.files[i]);
-              }
-            }else{
-              vm.fileNameList = [];//先将数组置空
-              vm.fileNameList.push(this.files[0]);
+    mounted () {
+      const vm = this
+      this.$refs.file.onchange = function () {
+        vm.$emit('change', this.files)
+        if (this.files.length) {
+          if (vm.multiple) {
+            for (let i = 0; i < this.files.length; i++) {
+              vm.fileNameList.push(this.files[i])
             }
+          } else {
+            vm.fileNameList = []// 先将数组置空
+            vm.fileNameList.push(this.files[0])
           }
+        }
       }
     },
-    methods:{
-      removeFile:function(id){
-        this.fileNameList.splice(id ,1);
-        this.$emit('change',this.fileNameList);
+    methods: {
+      removeFile: function (id) {
+        this.fileNameList.splice(id, 1)
+        this.$emit('change', this.fileNameList)
       }
     }
   }

@@ -1,0 +1,107 @@
+@import "../../style/common/baseStyle.less";
+.w_button{
+  display: inline-block;
+  line-height: 1;
+  white-space: nowrap;
+  cursor: pointer;
+  -webkit-appearance: none;
+  text-align: center;
+  box-sizing: border-box;
+  outline: none;
+  margin: 0;
+  padding: 12px 20px;
+  font-size: 14px;
+  border:none;
+  color:@color-default;
+  border-radius:@border-radius-small;
+  &--default{
+    background-color: @color-default;
+    border:1px solid @color-close;
+    color:@color-primary;
+    transform: border .2s;
+    cursor: pointer;
+    &:focus{
+      border: 1px solid @color-info;
+    }
+  }
+  &--success{
+    background-color: @color-success;
+    &:hover{
+      background-color:@color-success-hover;
+      color:white;
+    }
+  }
+  &--info{
+    background-color: @color-info;
+    &:hover{
+      background-color:@color-info-hover;
+      color:white;
+    }
+  }
+  &--warning{
+    background-color: @color-warning;
+    &:hover{
+      background-color:@color-warning-hover;
+      color:white;
+    }
+  }
+  &--danger{
+    background-color: @color-danger;
+    &:hover{
+      background-color:@color-danger-hover;
+      color:white;
+    }
+  }
+}
+//是否是普通按钮
+.is-general{
+  background-color: white;
+  color: black;
+  &.w_button--success{
+    background-color: @color-success-hover;
+    color:@color-default;
+  }
+  &.w_button--danger{
+    background-color: @color-danger-hover;
+    color:@color-default;
+  }
+  &.w_button--info{
+    background-color: @color-info-hover;
+    color:@color-default;
+  }
+  &.w_button--warning{
+    background-color: @color-warning-hover;
+    color:@color-default;
+  }
+  &.w_button--primary{
+    background-color: @color-default-hover;
+    color:@color-default;
+  }
+}
+//是否倒圆角
+.is-round{
+  border-radius:@border-radius-circle;
+}
+//是否是长条按钮
+.is-broad{
+  width: 100%;
+}
+//处于禁用状态
+.is-disabled{
+  cursor: default;
+  opacity: 0.5;
+}
+.w_button--size{
+  &-small{
+    padding: @small;
+    font-size: @small-font;
+  }
+  &-medium{
+    padding: @medium;
+    font-size: @medium-font;
+  }
+  &-big{
+    padding: @big;
+    font-size: @big-font;
+  }
+}

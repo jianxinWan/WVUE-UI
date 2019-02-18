@@ -43,6 +43,6 @@
     }
   }
 </script>
-<style>
-  @import "../../style/button.css";
+<style lang="less">
+  @import "./button.less";
 </style>

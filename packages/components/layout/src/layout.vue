@@ -21,7 +21,6 @@
     name: 'layout',
     data () {
       return {
-        // eslint-disable-next-line key-spacing
         msg:'layout'
       }
     },

@@ -14,7 +14,7 @@
     </div>
     <ul class="options-ul-list">
       <li v-show="displayOptions.length == 0">没有查询到数据</li>
-      <li v-for="item in displayOptions" @click.stop.prevent="singleSelect(item.id)" :class="(item.id == selected.id)?'selected':''">{{ item.name }}</li>
+      <li v-for="(item,index) in displayOptions" :key="index" @click.stop.prevent="singleSelect(item.id)" :class="(item.id == selected.id)?'selected':''">{{ item.name }}</li>
     </ul>
   </div>
 </div>

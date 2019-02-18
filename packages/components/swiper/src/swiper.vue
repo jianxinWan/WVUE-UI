@@ -1,7 +1,7 @@
 <template>
   <div class="slide-show" @mouseover="clearInv" @mouseout="runInv">
     <transition-group tag="ul" class='slide-ul' :name="transition">
-      <li v-for="(item , index ) in slides" :key="index" v-show="index===nowIndex">
+      <li v-for="(item ,index) in slides" :key="item+index" v-show="index===nowIndex">
         <a :href="item.href" :target="target">
           <img :src="item.src" alt="">
         </a>
@@ -10,7 +10,9 @@
     <ul class="slide-pages">
       <li v-for="(item, index) in slides"
           @click="goto(index)"
-          class="slide-page-point">
+          class="slide-page-point"
+          :key="index"
+          >
         <a :class="{'active': index === nowIndex}">{{ index + 1 }}</a>
       </li>
     </ul>

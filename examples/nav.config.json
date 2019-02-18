@@ -63,9 +63,9 @@
       "path": "/show/component",
       "items": [
         {
-          "desc": "alert弹窗",
-          "name": "alert",
-          "path": "/show/alert"
+          "desc": "confirm",
+          "name": "confirm",
+          "path": "/show/confrim"
         },
         {
           "desc": "loading(局部)",
