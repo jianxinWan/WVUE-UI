@@ -6,13 +6,13 @@
 <script>
 export default {
   name: 'w-lazy',
-  data(){
+  data () {
     return {
 
     }
   }
 }
 </script>
-<style>
-  @import '../../style/lazy.css';
+<style lang="less">
+  @import './lazy.less';
 </style>

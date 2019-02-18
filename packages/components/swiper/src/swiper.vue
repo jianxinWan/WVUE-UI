@@ -25,7 +25,7 @@
 
 <script>
   export default {
-    name:'w-swiper',
+    name: 'w-swiper',
     props: {
       slides: {
         type: Array,
@@ -84,6 +84,6 @@
   }
 </script>
 
-<style>
-  @import "../../style/swiper.css";
+<style lang="less">
+  @import "./swiper.less";
 </style>

@@ -61,7 +61,7 @@
 <script>
   export default {
     name: 'd-cartoon',
-    data(){
+    data () {
       return {
 
       }

@@ -2,7 +2,7 @@
   <div class="tab">
     <div class="tab-hd">
       <ul>
-        <li v-for="item in tabList" @click="change(item.tabName)" :class="activeShow(item)">
+        <li v-for="(item, index) in tabList" @click="change(item.tabName)" :class="activeShow(item)" :key="index">
           <div class="nav">
             {{item.title}}
           </div>
@@ -23,45 +23,45 @@
 <script>
   export default {
     name: 'w-tabs',
-    data(){
+    data () {
       return {
-        currentTab:this.tabList[0].tabName
+        currentTab: this.tabList[0].tabName
       }
     },
-    props:{
-      tabList:{
-        type:Array,
-        default:function(){
+    props: {
+      tabList: {
+        type: Array,
+        default: function () {
           return []
         }
       },
-      tabCut:{
-        type:String,
-        default:''
+      tabCut: {
+        type: String,
+        default: ''
       },
-      isWave:{
-        type:Boolean,
-        default:true
+      isWave: {
+        type: Boolean,
+        default: true
       }
     },
-    methods:{
-      change(contentTit){
-        this.currentTab = contentTit;
+    methods: {
+      change (contentTit) {
+        this.currentTab = contentTit
       },
-      activeShow(item){
+      activeShow (item) {
         return {
-          'nav-active':this.currentTab === item.tabName
+          'nav-active': this.currentTab === item.tabName
         }
-      },
+      }
     },
-    computed:{
-      currentTabComponent(){
-        return this.currentTab.toLowerCase();
+    computed: {
+      currentTabComponent () {
+        return this.currentTab.toLowerCase()
       }
     }
   }
 </script>
 
-<style>
-  @import "../../style/tabs.css";
+<style lang="less">
+  @import "./tabs.less";
 </style>

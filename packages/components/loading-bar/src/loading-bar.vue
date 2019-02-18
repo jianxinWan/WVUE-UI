@@ -31,5 +31,5 @@
   }
 </script>
 <style>
-  @import '../../style/loading-bar.css';
+  @import './loading-bar.less';
 </style>

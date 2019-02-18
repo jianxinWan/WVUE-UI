@@ -7,44 +7,6 @@
     mounted () {
     },
     methods: {
-      showAlert(e){
-        let alertType = e.currentTarget.getAttribute("alert");
-        let alertSize = e.currentTarget.getAttribute("alertSize");
-        let alertIcon = e.currentTarget.getAttribute("alertIcon");
-        switch(alertType){
-          case 'info':
-            this.$refs.info.show();
-            break;
-          case 'warning':
-            this.$refs.warning.show();
-            break;
-          case 'comfirm':
-            this.$refs.comfirm.show();
-            break;
-        }
-        switch(alertSize){
-          case 'small':
-            this.$refs.small.show();
-            break;
-          case 'medium':
-            this.$refs.medium.show();
-            break;
-          case 'big':
-            this.$refs.big.show();
-            break;
-        }
-        switch(alertIcon){
-          case 'icon':
-            this.$refs.icon.show();
-            break;
-          case 'picture':
-            this.$refs.picture.show();
-            break;
-        }
-      },
-      closeAlert:function(){
-        this.$refs.picture.close();
-      }
     }
   }
 </script>
@@ -55,7 +17,7 @@
 
 ### 基本用法
 弹窗总共有```info```、```warning```、```confirm```三种类型，通过设定type来显示不同的类型，弹窗颜色和样式可以通过```color```来进行设定，我们设定显示按钮在指定函数```showAlert()```中进行配置，具体请看代码。如果你要设置弹框的头部信息在标签里面添加```<h2 slot="alertHeader">内容</h2>```这样你的弹窗头部会显示你需要的信息，如果不设置默认为type类型的值。
-  * 注意一点:我们再给组件添加事件的时候需要这样写```@click.navite="info"```
+* 注意一点:我们再给组件添加事件的时候需要这样写```@click.navite="info"```
 <div class="demo-block" >
   <div>
     <w-alert center ref="info" type="info" size="small">

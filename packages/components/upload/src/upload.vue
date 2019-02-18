@@ -72,6 +72,6 @@
   }
 </script>
 
-<style>
-  @import '../../style/upload.css';
+<style lang="less">
+  @import './upload.less';
 </style>

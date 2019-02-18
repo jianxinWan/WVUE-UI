@@ -8,7 +8,6 @@ import {VUE_META_KEY_NAME} from './src/common/constants'
 let VueMetaInfo = () => {
 }
 
-
 VueMetaInfo.install = function (Vue) {
   Vue.mixin({
     beforeCreate () {
@@ -22,8 +21,8 @@ VueMetaInfo.install = function (Vue) {
           this.$options.computed = {}
         }
         // 为组件添加 computed 对象并返回 vueMeta 信息
-        this.$options.computed.$metaInfo = type === 'function' ? this.$options[VUE_META_KEY_NAME] :
-          () => this.$options[VUE_META_KEY_NAME]
+        this.$options.computed.$metaInfo = type === 'function' ? this.$options[VUE_META_KEY_NAME]
+          : () => this.$options[VUE_META_KEY_NAME]
       }
     },
     beforeMount () {
