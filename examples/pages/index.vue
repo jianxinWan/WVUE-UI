@@ -31,8 +31,8 @@
               </span>
             </div>
           </router-link>
-          <a href="http://139.199.104.60/ttms/index.html#/index">
-            <div class="showBtn">查看演示</div>
+          <a href="http://www.wvue.com.cn/ttms/index.html#/index">
+            <div class="showBtn">项目展示</div>
           </a>
         </div>
       </div>
@@ -50,7 +50,7 @@
       </div>
     </div>
   </div>
-</template>
+</template>ass
 <script>
   /* eslint-disable key-spacing */
   export default {

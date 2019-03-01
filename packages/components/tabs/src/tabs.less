@@ -5,8 +5,8 @@
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  & .tab-hd{
-    & ul{
+  .tab-hd{
+    ul{
       width: 100%;
       display: flex;
       flex-direction: row;
@@ -16,19 +16,19 @@
       padding: 0;
       border: 1px solid #ccc;
       box-shadow:0.1rem 0.2rem 4px #ccc;
-      & li{
+      li{
         list-style: none;
         position: relative;
         &:hover{
           cursor: pointer;
         }
-        & .nav{
+        .nav{
           margin: 0.5rem 1.8rem;
         }
       }
     }
   }
-  & .tab-bd{
+  .tab-bd{
     height:auto;
     border: 1px solid #ccc;
     min-height: 200px;
@@ -47,20 +47,9 @@
   background-color: #2196f3;
   animation:underLineMove 0.4s;
   -webkit-animation:underLineMove 0.4s; /* Safari and Chrome */
+  width: 100%;
 }
 @keyframes underLineMove
-{
-  from {
-    left:50%;
-    width:0;
-  }
-  to {
-    left: 0;
-    width: 100%;
-  }
-}
-
-@-webkit-keyframes underLineMove
 {
   from {
     left:50%;

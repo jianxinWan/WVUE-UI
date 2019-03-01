@@ -5,7 +5,7 @@
 * */
 
 import Lazy from './src/lazy.vue'
-Lazy.install = function(Vue){
-  Vue.component(Lazy.name,Lazy)
+Lazy.install = function (Vue) {
+  Vue.component(Lazy.name, Lazy)
 }
 export default Lazy
